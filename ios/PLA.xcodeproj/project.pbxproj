@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7594D7503C21805D5A76E6EE /* libPods-PLA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9A3BB797C31423405BA3FA /* libPods-PLA.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		990C4213C43450A66999BB0C /* libPods-PLA-PLATests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4926790DD4770E7ED7B38598 /* libPods-PLA-PLATests.a */; };
+		B3F12D096093788E49833564 /* libPods-PLA-PLATests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7393B7D3E82925FBA77F3FF8 /* libPods-PLA-PLATests.a */; };
+		E977A4C3B624E7E1DFBE7B0A /* libPods-PLA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7069EDC0A35F4D064169B4D /* libPods-PLA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,13 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PLA/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PLA/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PLA/main.m; sourceTree = "<group>"; };
-		4926790DD4770E7ED7B38598 /* libPods-PLA-PLATests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLA-PLATests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F9A3BB797C31423405BA3FA /* libPods-PLA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		615CDA8283D46265F3E0AF04 /* Pods-PLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA.debug.xcconfig"; path = "Target Support Files/Pods-PLA/Pods-PLA.debug.xcconfig"; sourceTree = "<group>"; };
-		75697471844314251855C216 /* Pods-PLA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA.release.xcconfig"; path = "Target Support Files/Pods-PLA/Pods-PLA.release.xcconfig"; sourceTree = "<group>"; };
+		276E6948AC7D391E81B29AE7 /* Pods-PLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA.debug.xcconfig"; path = "Target Support Files/Pods-PLA/Pods-PLA.debug.xcconfig"; sourceTree = "<group>"; };
+		459C08493D40678E46DA5CDD /* Pods-PLA-PLATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA-PLATests.debug.xcconfig"; path = "Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests.debug.xcconfig"; sourceTree = "<group>"; };
+		7393B7D3E82925FBA77F3FF8 /* libPods-PLA-PLATests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLA-PLATests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PLA/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9511457E2EF0CDB0087E8096 /* Pods-PLA-PLATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA-PLATests.debug.xcconfig"; path = "Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests.debug.xcconfig"; sourceTree = "<group>"; };
-		AAF9119C4C1E44E99D489D33 /* Pods-PLA-PLATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA-PLATests.release.xcconfig"; path = "Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests.release.xcconfig"; sourceTree = "<group>"; };
+		97974FB207FCB8320D0D8001 /* Pods-PLA-PLATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA-PLATests.release.xcconfig"; path = "Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests.release.xcconfig"; sourceTree = "<group>"; };
+		97EF7228906BAE219F42A6BA /* Pods-PLA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLA.release.xcconfig"; path = "Target Support Files/Pods-PLA/Pods-PLA.release.xcconfig"; sourceTree = "<group>"; };
+		A7069EDC0A35F4D064169B4D /* libPods-PLA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990C4213C43450A66999BB0C /* libPods-PLA-PLATests.a in Frameworks */,
+				B3F12D096093788E49833564 /* libPods-PLA-PLATests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7594D7503C21805D5A76E6EE /* libPods-PLA.a in Frameworks */,
+				E977A4C3B624E7E1DFBE7B0A /* libPods-PLA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4F9A3BB797C31423405BA3FA /* libPods-PLA.a */,
-				4926790DD4770E7ED7B38598 /* libPods-PLA-PLATests.a */,
+				A7069EDC0A35F4D064169B4D /* libPods-PLA.a */,
+				7393B7D3E82925FBA77F3FF8 /* libPods-PLA-PLATests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				615CDA8283D46265F3E0AF04 /* Pods-PLA.debug.xcconfig */,
-				75697471844314251855C216 /* Pods-PLA.release.xcconfig */,
-				9511457E2EF0CDB0087E8096 /* Pods-PLA-PLATests.debug.xcconfig */,
-				AAF9119C4C1E44E99D489D33 /* Pods-PLA-PLATests.release.xcconfig */,
+				276E6948AC7D391E81B29AE7 /* Pods-PLA.debug.xcconfig */,
+				97EF7228906BAE219F42A6BA /* Pods-PLA.release.xcconfig */,
+				459C08493D40678E46DA5CDD /* Pods-PLA-PLATests.debug.xcconfig */,
+				97974FB207FCB8320D0D8001 /* Pods-PLA-PLATests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PLATests" */;
 			buildPhases = (
-				28ED0D4A2838FEDD72A606BE /* [CP] Check Pods Manifest.lock */,
+				FC80E088FC2D93202AECB88C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				D686B791B0674BD3651BED19 /* [CP] Embed Pods Frameworks */,
-				644548C082B5FFB083981B74 /* [CP] Copy Pods Resources */,
+				FA1F5BA6D57113C953E6DF55 /* [CP] Embed Pods Frameworks */,
+				2574FB4DD35A104787C27796 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PLA" */;
 			buildPhases = (
-				1B4002005ED3C68CE28C3F34 /* [CP] Check Pods Manifest.lock */,
+				7D265F7778E4BFF3257169AF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				D7E08EE0092F55F7B39FF575 /* [CP] Embed Pods Frameworks */,
-				0453A040FA1A9032ED374422 /* [CP] Copy Pods Resources */,
+				D4E3B28219E7A501CAC7CA37 /* [CP] Embed Pods Frameworks */,
+				A897D48659423C7B6B3F7C5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,24 +266,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		0453A040FA1A9032ED374422 /* [CP] Copy Pods Resources */ = {
+		2574FB4DD35A104787C27796 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1B4002005ED3C68CE28C3F34 /* [CP] Check Pods Manifest.lock */ = {
+		7D265F7778E4BFF3257169AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,7 +305,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		28ED0D4A2838FEDD72A606BE /* [CP] Check Pods Manifest.lock */ = {
+		A897D48659423C7B6B3F7C5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E3B28219E7A501CAC7CA37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA1F5BA6D57113C953E6DF55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC80E088FC2D93202AECB88C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,57 +376,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		644548C082B5FFB083981B74 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D686B791B0674BD3651BED19 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA-PLATests/Pods-PLA-PLATests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7E08EE0092F55F7B39FF575 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLA/Pods-PLA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9511457E2EF0CDB0087E8096 /* Pods-PLA-PLATests.debug.xcconfig */;
+			baseConfigurationReference = 459C08493D40678E46DA5CDD /* Pods-PLA-PLATests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +457,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF9119C4C1E44E99D489D33 /* Pods-PLA-PLATests.release.xcconfig */;
+			baseConfigurationReference = 97974FB207FCB8320D0D8001 /* Pods-PLA-PLATests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +481,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 615CDA8283D46265F3E0AF04 /* Pods-PLA.debug.xcconfig */;
+			baseConfigurationReference = 276E6948AC7D391E81B29AE7 /* Pods-PLA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -507,7 +507,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75697471844314251855C216 /* Pods-PLA.release.xcconfig */;
+			baseConfigurationReference = 97EF7228906BAE219F42A6BA /* Pods-PLA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
