@@ -1,15 +1,10 @@
 import {compose} from 'redux';
 import {connect} from 'react-redux';
-import {decrement, increment} from '../../store/reducer/home';
+import {fetchProducts} from '../../store/reducer/home';
 import Home from './home';
 
-const selector = () => {
-  return {};
-};
-
 const actions = {
-  decrement,
-  increment,
+  fetchProducts,
 };
 
-export default compose(connect(selector, actions))(Home);
+export default compose(connect(null, actions))(Home);
