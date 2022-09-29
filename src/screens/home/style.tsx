@@ -22,4 +22,9 @@ export const Styles = StyleSheet.create({
   columWrapper: {
     justifyContent: 'space-between',
   },
+  productImage: {
+    width: 150,
+    height: 150,
+    resizeMode: 'contain',
+  },
 });
