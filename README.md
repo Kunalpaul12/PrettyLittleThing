@@ -46,4 +46,4 @@ To install it npm install --global yarn
 
 # Debug Build
 
-A debug build apk for android is at the root of the project
+A debug build apk (assignment.apk) for android is at the root of the project
