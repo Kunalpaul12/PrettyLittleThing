@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {FlatList} from 'react-native';
+import {FlatList, Image} from 'react-native';
 import {NavigationProp, ParamListBase} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import {Loader, _Image, AddRemove} from '../../components';
@@ -12,6 +12,7 @@ import {
   Styles,
   CheckoutButton,
   ProductSeparator,
+  NoDataContainer,
 } from './style';
 import {FONTS_TYPE} from '../../constants';
 import StaticImage from '../../assets/icons';
@@ -66,15 +67,26 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
         </ProductContainer>
       );
     };
+
+    const noData = () => {
+      return (
+        <NoDataContainer>
+          <Image source={StaticImage?.noData} />
+          <_Text paddingTop={10}>{Language?.NoProduct}</_Text>
+        </NoDataContainer>
+      );
+    };
+
     return (
       <FlatList
         data={products}
         numColumns={NO_OF_PRODUCTS_PER_COLUMNS}
         renderItem={({item, index}) => _renderProducts(item, index)}
-        keyExtractor={(item, index) => String(item.id || index)}
+        keyExtractor={(item, index) => String(item?.id || index)}
         extraData={products}
         columnWrapperStyle={Styles?.columWrapper}
         ItemSeparatorComponent={() => <ProductSeparator />}
+        ListEmptyComponent={() => noData()}
         style={Styles?.flatListContainer}
       />
     );

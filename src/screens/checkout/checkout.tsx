@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
-import {InnerContainer, Container, _Text, ProductSeparator} from '../../styles';
+import {InnerContainer, Container, _Text} from '../../styles';
 import Colors from '../../colors';
 import {FONTS_TYPE} from '../../constants';
 import {

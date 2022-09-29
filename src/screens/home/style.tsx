@@ -28,6 +28,12 @@ export const ProductSeparator = styled.View`
   padding: 10px;
 `;
 
+export const NoDataContainer = styled.View`
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+`;
+
 export const Styles = StyleSheet.create({
   columWrapper: {
     justifyContent: 'space-between',

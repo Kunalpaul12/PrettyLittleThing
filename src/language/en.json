@@ -1,5 +1,6 @@
 {
-   "loadingProduct":"Loading product please wait",
+   "loadingProduct":"Loading products please wait",
    "Checkout":"Checkout",
-   "PlaceOrder":"Place an Order"
+   "PlaceOrder":"Place an Order",
+   "NoProduct":"No Products found!"
 }
