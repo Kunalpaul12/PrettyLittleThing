@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {FlatList} from 'react-native';
 import {NavigationProp, ParamListBase} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
-import {Loader, _Image} from '../../components';
+import {Loader, _Image, AddRemove} from '../../components';
 import {loadingProduct} from '../../language/en.json';
 import {InnerContainer, Container, _Text} from '../../styles';
 import {productProps} from '../../store/reducer/home';
@@ -15,9 +15,11 @@ type Props = {
   navigation: NavigationProp<ParamListBase>;
   fetchProducts: () => void;
   loading: boolean;
+  add: (id: number) => void;
+  remove: (id: number) => void;
 };
 
-const Home: React.FC<Props> = ({navigation, fetchProducts}) => {
+const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -27,7 +29,7 @@ const Home: React.FC<Props> = ({navigation, fetchProducts}) => {
 
   const ProductList = () => {
     const _renderProducts = (item: productProps) => {
-      const {name, price, img} = item;
+      const {name, price, img, id, quantity = 0} = item;
       const filterName =
         name.length > PRODUCT_NAME_LENGTH
           ? name.substring(0, PRODUCT_NAME_LENGTH) + '...'
@@ -39,15 +41,15 @@ const Home: React.FC<Props> = ({navigation, fetchProducts}) => {
             imageStyle={Styles?.productImage}
             staticImage={StaticImage?.downloadingImage}
           />
+
           <_Text fontSize={11} paddingTop={10}>
             {filterName}
           </_Text>
-          <_Text
-            fontSize={12}
-            paddingTop={10}
-            fontFamily={FONTS_TYPE?.semiBold}>
+
+          <_Text fontSize={12} paddingTop={5} fontFamily={FONTS_TYPE?.semiBold}>
             ${price}
           </_Text>
+          <AddRemove add={add} remove={remove} id={id} quantity={quantity} />
         </ProductContainer>
       );
     };

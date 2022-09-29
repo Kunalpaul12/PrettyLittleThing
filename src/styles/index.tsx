@@ -17,9 +17,6 @@ export const _Text = styled.Text`
   color: ${(props: any) => props?.color || colors?.text};
   padding-top: ${(props: any) => props?.paddingTop || '0'}px;
   text-align: ${(props: any) => props?.textAlign || 'center'};
-  padding-left: ${(props: any) => props?.paddingLeft || '0'}px;
-  padding-bottom: ${(props: any) => props?.paddingBottom || '0'}px;
-  padding-top: ${(props: any) => props?.paddingTop || '0'}px;
 `;
 
 export const InnerContainer = styled.View`

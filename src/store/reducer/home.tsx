@@ -8,12 +8,14 @@ export type productProps = {
   name: string;
   price: number;
   img: string;
+  quantity?: number;
 };
 
 interface HomeState {
   products: productProps[];
   loading: true | false;
   products_error: string;
+  total: number;
 }
 
 export const homeSlice = createSlice({
@@ -22,8 +24,30 @@ export const homeSlice = createSlice({
     products: [],
     products_error: '',
     loading: true,
+    total: 0,
   } as HomeState,
-  reducers: {},
+  reducers: {
+    add: (state, action) => {
+      const data = state.products;
+      data.forEach(e => {
+        if (e.id === action.payload) {
+          e.quantity = e.quantity ? e.quantity + 1 : 1;
+          state.total += e.price;
+        }
+      });
+      state.products = data;
+    },
+    remove: (state, action) => {
+      const data = state.products;
+      data.forEach(e => {
+        if (e.id === action.payload) {
+          e.quantity = e.quantity ? e.quantity - 1 : 0;
+          state.total -= e.price;
+        }
+      });
+      state.products = data;
+    },
+  },
   extraReducers: builder => {
     builder.addCase(fetchProducts.fulfilled, (state, action) => {
       state.products = action.payload;
@@ -43,5 +67,7 @@ export const fetchProducts = createAsyncThunk(
     return response.data;
   },
 );
+
+export const {add, remove} = homeSlice.actions;
 
 export default homeSlice.reducer;

@@ -6,7 +6,7 @@ const {width} = Dimensions?.get('window');
 
 export const ProductContainer = styled.View`
   width: ${width / 2.34}px;
-  height: 250px
+  height: 280px
   align-self: center;
   border-color: ${Colors?.productBorder};
   border-width: 0.5px;
