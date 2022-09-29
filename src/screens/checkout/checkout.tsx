@@ -67,7 +67,6 @@ const CheckOut: React.FC<Props> = ({add, remove}) => {
         data={products}
         renderItem={({item, index}) => _renderCheckoutList(item, index)}
         keyExtractor={(item, index) => String(item.id || index)}
-        ItemSeparatorComponent={() => <ProductSeparator />}
         extraData={products}
       />
     );

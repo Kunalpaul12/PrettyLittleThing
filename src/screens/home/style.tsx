@@ -24,6 +24,10 @@ export const CheckoutButton = styled.TouchableOpacity`
   opacity: ${props => (props?.disable ? 0.5 : 1)};
 `;
 
+export const ProductSeparator = styled.View`
+  padding: 10px;
+`;
+
 export const Styles = StyleSheet.create({
   columWrapper: {
     justifyContent: 'space-between',

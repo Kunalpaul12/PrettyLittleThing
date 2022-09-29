@@ -4,10 +4,15 @@ import {NavigationProp, ParamListBase} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import {Loader, _Image, AddRemove} from '../../components';
 import Language from '../../language/en.json';
-import {InnerContainer, Container, _Text, ProductSeparator} from '../../styles';
+import {InnerContainer, Container, _Text} from '../../styles';
 import {productProps} from '../../store/reducer/home';
 import {NO_OF_PRODUCTS_PER_COLUMNS} from '../../config';
-import {ProductContainer, Styles, CheckoutButton} from './style';
+import {
+  ProductContainer,
+  Styles,
+  CheckoutButton,
+  ProductSeparator,
+} from './style';
 import {FONTS_TYPE} from '../../constants';
 import StaticImage from '../../assets/icons';
 import Colors from '../../colors';

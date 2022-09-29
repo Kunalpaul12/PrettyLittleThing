@@ -20,6 +20,7 @@ export const CheckoutListContainer = styled.View`
   border-width: 0.5px;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 `;
 
 export const CheckoutDetailsContainer = styled.View`

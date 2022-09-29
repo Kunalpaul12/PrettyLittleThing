@@ -32,7 +32,3 @@ export const ComponentsContainer = styled.View`
   justify-content: center;
   align-items: center;
 `;
-
-export const ProductSeparator = styled.View`
-  padding: 10px;
-`;
