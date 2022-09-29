@@ -11,7 +11,8 @@ export const AddRemoveButton = styled.TouchableOpacity`
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  border-color: ${Colors?.addRemoveButton};
+  border-color: ${props =>
+    props?.disable ? Colors?.productBorder : Colors?.addRemoveButton};
   border-width: 1px;
   justify-content: center;
   align-items: center;

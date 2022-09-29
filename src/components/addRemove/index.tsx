@@ -28,7 +28,7 @@ const AddRemove: React.FC<Props> = ({add, remove, id, quantity}) => {
       <AddRemoveButton disable={!quantity} onPress={() => remove(id)}>
         <_Text
           fontSize={11}
-          color={Colors?.addRemoveButton}
+          color={!quantity ? Colors?.productBorder : Colors?.addRemoveButton}
           fontFamily={FONTS_TYPE?.semiBold}>
           -
         </_Text>
