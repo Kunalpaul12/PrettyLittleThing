@@ -18,6 +18,16 @@ export const ProductSeparator = styled.View`
   padding: 10px;
 `;
 
+export const CheckoutButton = styled.TouchableOpacity`
+  margin-bottom: 30px;
+  background-color: ${Colors?.addRemoveButton};
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: ${props => (props?.disable ? 0.5 : 1)};
+`;
+
 export const Styles = StyleSheet.create({
   columWrapper: {
     justifyContent: 'space-between',
@@ -26,5 +36,8 @@ export const Styles = StyleSheet.create({
     width: 150,
     height: 150,
     resizeMode: 'contain',
+  },
+  flatListContainer: {
+    marginTop: 15,
   },
 });

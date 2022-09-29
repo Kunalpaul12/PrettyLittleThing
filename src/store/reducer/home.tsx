@@ -29,23 +29,23 @@ export const homeSlice = createSlice({
   reducers: {
     add: (state, action) => {
       const data = state.products;
-      data.forEach(e => {
-        if (e.id === action.payload) {
-          e.quantity = e.quantity ? e.quantity + 1 : 1;
-          state.total += e.price;
-        }
-      });
+      const index = action?.payload;
+      const productObj: productProps = state.products[index];
+      if (productObj.hasOwnProperty('quantity')) {
+        productObj.quantity = productObj?.quantity + 1;
+      } else {
+        productObj.quantity = 1;
+      }
+      data[index] = productObj;
       state.products = data;
+      state.total = Number((state.total + data[index].price).toFixed(2));
     },
     remove: (state, action) => {
       const data = state.products;
-      data.forEach(e => {
-        if (e.id === action.payload) {
-          e.quantity = e.quantity ? e.quantity - 1 : 0;
-          state.total -= e.price;
-        }
-      });
+      const index = action?.payload;
+      data[index].quantity = data[index].quantity - 1;
       state.products = data;
+      state.total = Number((state.total - data[index].price).toFixed(2));
     },
   },
   extraReducers: builder => {

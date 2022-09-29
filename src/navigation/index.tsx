@@ -8,7 +8,7 @@ const RootStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Check Out" component={CheckOut} />
+      <Stack.Screen name="CheckOut" component={CheckOut} />
     </Stack.Navigator>
   );
 };

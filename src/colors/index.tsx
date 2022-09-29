@@ -3,4 +3,5 @@ export default {
   text: '#000000',
   productBorder: 'grey', // This is also using for remove button when disable
   addRemoveButton: 'pink',
+  white: '#FFFFFF',
 };

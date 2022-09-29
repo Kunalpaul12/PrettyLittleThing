@@ -5,16 +5,16 @@ import {FONTS_TYPE} from '../../constants';
 import Colors from '../../colors';
 
 type Props = {
-  add: (id: number) => void;
-  remove: (id: number) => void;
-  id: number;
+  add: (index: number) => void;
+  remove: (index: number) => void;
+  index: number;
   quantity: number;
 };
 
-const AddRemove: React.FC<Props> = ({add, remove, id, quantity}) => {
+const AddRemove: React.FC<Props> = ({add, remove, index, quantity}) => {
   return (
     <AddRemoveContainer>
-      <AddRemoveButton onPress={() => add(id)}>
+      <AddRemoveButton onPress={() => add(index)}>
         <_Text
           fontSize={11}
           color={Colors?.addRemoveButton}
@@ -25,7 +25,9 @@ const AddRemove: React.FC<Props> = ({add, remove, id, quantity}) => {
       <_Text fontSize={12} fontFamily={FONTS_TYPE?.semiBold}>
         {quantity}
       </_Text>
-      <AddRemoveButton disable={!quantity} onPress={() => remove(id)}>
+      <AddRemoveButton
+        disable={!quantity}
+        onPress={() => (!quantity ? null : remove(index))}>
         <_Text
           fontSize={11}
           color={!quantity ? Colors?.productBorder : Colors?.addRemoveButton}
