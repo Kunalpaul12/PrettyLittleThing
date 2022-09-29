@@ -14,6 +14,7 @@ import {checkName} from '../../utils';
 import StaticImage from '../../assets/icons';
 import {_Image, AddRemove} from '../../components';
 import {productProps} from '../../store/reducer/home';
+import Language from '../../language/en.json';
 
 type Props = {
   add: (index: number) => void;
@@ -46,7 +47,7 @@ const CheckOut: React.FC<Props> = ({add, remove}) => {
                 paddingBottom={5}
                 fontSize={12}
                 paddingLeft={10}>
-                Total {totalPrice}
+                $ {totalPrice}
               </_Text>
               <AddRemove
                 add={add}
@@ -78,7 +79,7 @@ const CheckOut: React.FC<Props> = ({add, remove}) => {
         {checkoutList()}
         <PlacedOrderButton>
           <_Text color={Colors?.white} fontFamily={FONTS_TYPE?.semiBold}>
-            Placed Order of ${total}
+            {Language?.PlaceOrder} ${total}
           </_Text>
         </PlacedOrderButton>
       </InnerContainer>

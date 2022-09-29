@@ -3,7 +3,7 @@ import {FlatList} from 'react-native';
 import {NavigationProp, ParamListBase} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import {Loader, _Image, AddRemove} from '../../components';
-import {loadingProduct} from '../../language/en.json';
+import Language from '../../language/en.json';
 import {InnerContainer, Container, _Text, ProductSeparator} from '../../styles';
 import {productProps} from '../../store/reducer/home';
 import {NO_OF_PRODUCTS_PER_COLUMNS} from '../../config';
@@ -78,7 +78,9 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
   return (
     <Container>
       <InnerContainer>
-        {loading && <Loader loadingText={loadingProduct} size="large" />}
+        {loading && (
+          <Loader loadingText={Language?.loadingProduct} size="large" />
+        )}
         {!loading && ProductList()}
         {!loading && (
           <CheckoutButton
@@ -87,7 +89,7 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
               total ? navigation.push('CheckOut') : null;
             }}>
             <_Text fontSize={17} color={Colors?.white}>
-              Checkout
+              {Language?.Checkout}
             </_Text>
           </CheckoutButton>
         )}
