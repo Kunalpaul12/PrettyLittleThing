@@ -14,10 +14,6 @@ export const ProductContainer = styled.View`
   align-items:center
 `;
 
-export const ProductSeparator = styled.View`
-  padding: 10px;
-`;
-
 export const CheckoutButton = styled.TouchableOpacity`
   margin-bottom: 30px;
   background-color: ${Colors?.addRemoveButton};

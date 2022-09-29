@@ -4,18 +4,14 @@ import {NavigationProp, ParamListBase} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import {Loader, _Image, AddRemove} from '../../components';
 import {loadingProduct} from '../../language/en.json';
-import {InnerContainer, Container, _Text} from '../../styles';
+import {InnerContainer, Container, _Text, ProductSeparator} from '../../styles';
 import {productProps} from '../../store/reducer/home';
-import {NO_OF_PRODUCTS_PER_COLUMNS, PRODUCT_NAME_LENGTH} from '../../config';
-import {
-  ProductContainer,
-  ProductSeparator,
-  Styles,
-  CheckoutButton,
-} from './style';
+import {NO_OF_PRODUCTS_PER_COLUMNS} from '../../config';
+import {ProductContainer, Styles, CheckoutButton} from './style';
 import {FONTS_TYPE} from '../../constants';
 import StaticImage from '../../assets/icons';
 import Colors from '../../colors';
+import {checkName} from '../../utils';
 
 type Props = {
   navigation: NavigationProp<ParamListBase>;
@@ -36,11 +32,7 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
 
   const ProductList = () => {
     const _renderProducts = (item: productProps, index: number) => {
-      const {name, price, img, id, quantity = 0} = item;
-      const filterName =
-        name.length > PRODUCT_NAME_LENGTH
-          ? name.substring(0, PRODUCT_NAME_LENGTH) + '...'
-          : name;
+      const {name, price, img, quantity = 0} = item;
       return (
         <ProductContainer>
           <_Image
@@ -50,7 +42,7 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
           />
 
           <_Text fontSize={11} paddingTop={10}>
-            {filterName}
+            {checkName(name)}
           </_Text>
 
           <_Text

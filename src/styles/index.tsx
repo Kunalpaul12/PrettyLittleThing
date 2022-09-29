@@ -12,12 +12,13 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const _Text = styled.Text`
-  font-family: ${(props: any) => props?.fontFamily || FONTS_TYPE?.regular};
-  font-size: ${(props: any) => scale(props?.fontSize) || scale(15)}px;
-  color: ${(props: any) => props?.color || colors?.text};
-  padding-top: ${(props: any) => props?.paddingTop || '0'}px;
-  text-align: ${(props: any) => props?.textAlign || 'center'};
-  padding-bottom: ${(props: any) => props?.paddingBottom || '0'}px;
+  font-family: ${props => props?.fontFamily || FONTS_TYPE?.regular};
+  font-size: ${props => scale(props?.fontSize) || scale(15)}px;
+  color: ${props => props?.color || colors?.text};
+  padding-top: ${props => props?.paddingTop || '0'}px;
+  text-align: ${props => props?.textAlign || 'center'};
+  padding-bottom: ${props => props?.paddingBottom || '0'}px;
+  padding-left: ${props => props?.paddingLeft || '0'}px;
 `;
 
 export const InnerContainer = styled.View`
@@ -30,4 +31,8 @@ export const ComponentsContainer = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
+`;
+
+export const ProductSeparator = styled.View`
+  padding: 10px;
 `;
