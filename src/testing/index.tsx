@@ -1,6 +1,7 @@
 export default {
   checkoutButton: 'checkout',
-  addButton: 'add-',
-  removeButton: 'remove-',
+  productList: 'product_list',
+  addButton: 'add_',
+  removeButton: 'remove_',
   placedOrderButton: 'placed_order',
 };

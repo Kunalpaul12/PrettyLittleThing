@@ -89,6 +89,7 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
         ItemSeparatorComponent={() => <ProductSeparator />}
         ListEmptyComponent={() => noData()}
         style={Styles?.flatListContainer}
+        testID={Testing?.productList}
       />
     );
   };
