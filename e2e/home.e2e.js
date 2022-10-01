@@ -9,6 +9,9 @@ describe('PLA', () => {
   it('check product list', async () => {
     await expect(element(by.id('product_list'))).toExist();
   });
+  it('check descendant with product list ', async () => {
+    element(by.id('product_list').withDescendant(by.id('add_0')));
+  });
   it('add products', async () => {
     await element(by.id('add_1')).multiTap(2);
     await element(by.id('add_2')).multiTap(2);
