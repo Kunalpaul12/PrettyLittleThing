@@ -15,6 +15,7 @@ import StaticImage from '../../assets/icons';
 import {_Image, AddRemove} from '../../components';
 import {productProps} from '../../store/reducer/home';
 import Language from '../../language/en.json';
+import Testing from '../../testing';
 
 type Props = {
   add: (index: number) => void;
@@ -76,7 +77,7 @@ const CheckOut: React.FC<Props> = ({add, remove}) => {
     <Container>
       <InnerContainer>
         {checkoutList()}
-        <PlacedOrderButton>
+        <PlacedOrderButton testID={Testing?.placedOrderButton}>
           <_Text color={Colors?.white} fontFamily={FONTS_TYPE?.semiBold}>
             {Language?.PlaceOrder} ${total}
           </_Text>

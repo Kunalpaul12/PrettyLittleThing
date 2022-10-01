@@ -47,3 +47,21 @@ To install it npm install --global yarn
 # Debug Build
 
 A debug build apk (assignment.apk) for android is at the root of the project
+
+# Testing with Detox
+
+- Install detox cli yarn global add detox-cli
+
+### Android
+
+detox build -c android.debug (to build the bundle for testing)
+
+detox test -c android
+
+### Ios
+
+detox build -c ios.debug (to build the bundle for testing)
+
+detox test -c ios
+
+!["Testing"](https://media.giphy.com/media/iOyorpz6zb6a2Yf0Dp/giphy.gif)

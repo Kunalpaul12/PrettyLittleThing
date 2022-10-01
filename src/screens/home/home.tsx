@@ -18,6 +18,7 @@ import {FONTS_TYPE} from '../../constants';
 import StaticImage from '../../assets/icons';
 import Colors from '../../colors';
 import {checkName} from '../../utils';
+import Testing from '../../testing';
 
 type Props = {
   navigation: NavigationProp<ParamListBase>;
@@ -104,7 +105,8 @@ const Home: React.FC<Props> = ({navigation, fetchProducts, add, remove}) => {
             disable={!total}
             onPress={() => {
               total ? navigation.push('CheckOut') : null;
-            }}>
+            }}
+            testID={Testing?.checkoutButton}>
             <_Text fontSize={17} color={Colors?.white}>
               {Language?.Checkout}
             </_Text>

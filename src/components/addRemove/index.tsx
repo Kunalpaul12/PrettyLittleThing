@@ -3,6 +3,7 @@ import {_Text} from '../../styles';
 import {AddRemoveButton, AddRemoveContainer} from './styles';
 import {FONTS_TYPE} from '../../constants';
 import Colors from '../../colors';
+import Testing from '../../testing';
 
 type Props = {
   add: (index: number) => void;
@@ -18,7 +19,8 @@ const AddRemove: React.FC<Props> = ({add, remove, index, quantity}) => {
         <_Text
           fontSize={11}
           color={Colors?.addRemoveButton}
-          fontFamily={FONTS_TYPE?.semiBold}>
+          fontFamily={FONTS_TYPE?.semiBold}
+          testID={`${Testing?.addButton}${index}`}>
           +
         </_Text>
       </AddRemoveButton>
@@ -31,7 +33,8 @@ const AddRemove: React.FC<Props> = ({add, remove, index, quantity}) => {
         <_Text
           fontSize={11}
           color={!quantity ? Colors?.productBorder : Colors?.addRemoveButton}
-          fontFamily={FONTS_TYPE?.semiBold}>
+          fontFamily={FONTS_TYPE?.semiBold}
+          testID={`${Testing?.removeButton}${index}`}>
           -
         </_Text>
       </AddRemoveButton>
