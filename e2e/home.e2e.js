@@ -1,3 +1,11 @@
+const backButton = () => {
+  if (device.getPlatform() === 'ios') {
+    return element(by.traits(['button'])).atIndex(0);
+  } else {
+    return element(by.label('Navigate Up'));
+  }
+};
+
 describe('PLA', () => {
   beforeAll(async () => {
     await device.launchApp();
@@ -9,7 +17,7 @@ describe('PLA', () => {
   it('check product list', async () => {
     await expect(element(by.id('product_list'))).toExist();
   });
-  it('check descendant with product list ', async () => {
+  it('check descendant of product list ', async () => {
     element(by.id('product_list').withDescendant(by.id('add_0')));
   });
   it('add products', async () => {
@@ -28,8 +36,6 @@ describe('PLA', () => {
     await element(by.id('placed_order')).tap();
   });
   it('check back button', async () => {
-    await element(by.traits(['button']))
-      .atIndex(0)
-      .tap();
+    await backButton().tap();
   });
 });
