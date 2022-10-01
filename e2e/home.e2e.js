@@ -15,8 +15,10 @@ describe('PLA', () => {
     await element(by.id('add_3')).multiTap(2);
     await element(by.id('checkout')).tap();
   });
-  it('remove products', async () => {
+  it('check place order status', async () => {
     await expect(element(by.id('placed_order'))).toExist();
+  });
+  it('remove products', async () => {
     await element(by.id('remove_1')).multiTap(1);
     await element(by.id('remove_3')).multiTap(1);
     await element(by.id('remove_2')).multiTap(2);
