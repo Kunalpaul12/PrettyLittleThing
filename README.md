@@ -64,4 +64,4 @@ detox build -c ios.debug (to build the bundle for testing)
 
 detox test -c ios
 
-!["Testing"](https://media.giphy.com/media/iOyorpz6zb6a2Yf0Dp/giphy.gif)
+!["Testing"](https://media.giphy.com/media/X9eaalVjMMqSxSAph8/giphy.gif)
