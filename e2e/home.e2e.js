@@ -24,4 +24,9 @@ describe('PLA', () => {
     await element(by.id('remove_2')).multiTap(2);
     await element(by.id('placed_order')).tap();
   });
+  it('check back button', async () => {
+    await element(by.traits(['button']))
+      .atIndex(0)
+      .tap();
+  });
 });
