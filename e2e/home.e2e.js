@@ -38,8 +38,8 @@ describe('PLA', () => {
     await expect(element(by.id(placedOrderButton))).toExist();
   });
   it('remove products', async () => {
-    await element(by.id(`${removeButton}1`)).multiTap(1);
-    await element(by.id(`${removeButton}3`)).multiTap(1);
+    await element(by.id(`${removeButton}1`)).tap();
+    await element(by.id(`${removeButton}3`)).tap();
     await element(by.id(`${removeButton}2`)).multiTap(2);
     await element(by.id(placedOrderButton)).tap();
   });
