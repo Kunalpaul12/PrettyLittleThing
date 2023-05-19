@@ -8,7 +8,7 @@ Android
 
 <!-- !["Android"](https://media.giphy.com/media/O7zJGYPNKvlM9lyf6i/giphy.gif) -->
 
-!["Android"](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTM1OGZkYTU2YThmYWUyMzMxY2FhOGNkM2FmZTE5YTU0YWQ2NjI0NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/00AgUF7IV0ZahNL4AW/giphy-downsized-large.gif)
+!["Android"](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTI0OTM2MWY0Y2IzYTQyMDA5YzVmOTlhYjdmN2YwZWY3Yjg5YTExZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/ru5Dhf2ekLGIls5qYQ/giphy-downsized-large.gif)
 
 IOS
 
