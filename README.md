@@ -8,7 +8,7 @@ Android
 
 <!-- !["Android"](https://media.giphy.com/media/O7zJGYPNKvlM9lyf6i/giphy.gif) -->
 
-!["Android"](<img src="https://s11.gifyu.com/images/android.gif" width="250" height="250"/>)
+!["Android"](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTM1OGZkYTU2YThmYWUyMzMxY2FhOGNkM2FmZTE5YTU0YWQ2NjI0NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/00AgUF7IV0ZahNL4AW/giphy-downsized-large.gif)
 
 IOS
 
