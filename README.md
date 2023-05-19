@@ -6,13 +6,11 @@
 
 Android
 
-<!-- !["Android"](https://media.giphy.com/media/O7zJGYPNKvlM9lyf6i/giphy.gif) -->
-
-!["Android"](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTI0OTM2MWY0Y2IzYTQyMDA5YzVmOTlhYjdmN2YwZWY3Yjg5YTExZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/ru5Dhf2ekLGIls5qYQ/giphy-downsized-large.gif)
+!["Android"](https://media.giphy.com/media/O7zJGYPNKvlM9lyf6i/giphy.gif)
 
 IOS
 
-!["IOS"](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTM1NzU0ODMxYTU3NGExZGZmY2M3YTk5M2UxN2JhYjNhODU3OTQxZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/JmmcCfRPVVGi8V6ZjM/giphy-downsized-large.gif)
+!["IOS"](https://media.giphy.com/media/zldOte72aSrEXk4N1Q/giphy.gif)
 
 # Installation Requirements
 
