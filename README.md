@@ -12,7 +12,7 @@ Android
 
 IOS
 
-!["IOS"](https://media.giphy.com/media/zldOte72aSrEXk4N1Q/giphy.gif)
+!["IOS"](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTM1NzU0ODMxYTU3NGExZGZmY2M3YTk5M2UxN2JhYjNhODU3OTQxZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/JmmcCfRPVVGi8V6ZjM/giphy-downsized-large.gif)
 
 # Installation Requirements
 
